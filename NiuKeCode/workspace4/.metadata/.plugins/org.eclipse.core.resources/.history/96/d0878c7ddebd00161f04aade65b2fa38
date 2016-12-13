@@ -1,0 +1,61 @@
+package com.niuke.test3;
+
+/**
+ * 输入两个单调递增的链表，输出两个链表合成后的链表，
+ * 当然我们需要合成后的链表满足单调不减规则。
+ * @author Administrator
+ *思路： 建立一个空链表，，同时遍历list,list2,两者中的较小者添加到链表中
+ */
+public class MergeStoredList {
+	
+	public static void main(String[] args) {
+		ListNode list1 = new ListNode(20);
+		list1.next = new ListNode(30);
+		list1.next.next = new ListNode(40);
+		
+		ListNode list2 = new ListNode(10);
+		list2.next = new ListNode(15);
+		list2.next.next = new ListNode(35);
+		
+		ListNode result = merge(list1, list2);
+
+		while (result != null) {
+			System.out.print(result.val + " ");
+			result = result.next;
+		}
+	}
+	
+	public static ListNode merge(ListNode list1, ListNode list2){
+		ListNode result = new ListNode(-1);
+		ListNode i = list1;
+		ListNode j = list2;
+		
+		while(i.next != null && j.next != null){
+			if(i.val <= j.val){
+				ListNode current = result;
+				while(current.next != null){
+					current = current.next;
+				}
+				current.next = new ListNode(i.val);
+				i= i.next;
+			}else {
+				ListNode current = result;
+				while(current.next != null){
+					current = current.next;
+				}
+				current.next = new ListNode(j.val);
+				j= j.next;
+			}
+		}
+		
+		if(i.next == null && j.next ==null){
+			return result.next;
+		}else if (i.next == null) {
+			result.next = j;
+			return result.next;
+		}else{
+			result.next = i;
+			return result.next;
+		}
+	}
+}

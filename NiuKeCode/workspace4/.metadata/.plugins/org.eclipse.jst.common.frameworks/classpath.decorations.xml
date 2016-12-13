@@ -1,0 +1,10 @@
+<classpath>
+  <container id="ItcastOA!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="E:/Users/Administrator/workspace4/ItcastOA/WebRoot/WEB-INF/lib/xwork-core-2.3.15.3.jar">
+      <source-attachment-path>E:/JavaOpenSource/SSH frameWork/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+    <entry id="E:/Users/Administrator/workspace4/ItcastOA/WebRoot/WEB-INF/lib/struts2-core-2.3.15.3.jar">
+      <source-attachment-path>E:/JavaOpenSource/SSH frameWork/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

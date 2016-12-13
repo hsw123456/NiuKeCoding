@@ -1,0 +1,24 @@
+package com.niuke.test;
+
+import java.util.Scanner;
+
+public class ReplaceWords {
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		while(input.hasNext()){
+			String str = input.nextLine();
+			String orginal = input.nextLine();
+			String  replace = input.nextLine();
+			
+			str = str.replaceAll(orginal, replace);
+			System.out.println(str);
+		}
+		
+		
+	}
+	
+	
+
+}

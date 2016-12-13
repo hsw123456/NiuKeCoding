@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Animal" viewpoint="">
+  <packagedElement xmi:type="uml:Package" xmi:id="_znVHQCx_EeaGyMRVy7_H1A" name="Package1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YMJvECyAEeaGyMRVy7_H1A" name="Animal" clientDependency="_Ib_2xCyFEeaGyMRVy7_H1A _LtyXoCyFEeaGyMRVy7_H1A" isAbstract="true">
+    <ownedAttribute xmi:id="_wcE2wCyAEeaGyMRVy7_H1A" name="有生命"/>
+    <ownedOperation xmi:id="_Py03MCyBEeaGyMRVy7_H1A" name="新城代谢">
+      <ownedParameter xmi:id="_D8xkUCyDEeaGyMRVy7_H1A" name="氧气">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_I5LM4CyDEeaGyMRVy7_H1A" name="水">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_UtNGgCyBEeaGyMRVy7_H1A" name="繁殖"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_h1vYICyDEeaGyMRVy7_H1A" name="鸟">
+    <generalization xmi:id="_lavTcCyEEeaGyMRVy7_H1A" general="_YMJvECyAEeaGyMRVy7_H1A"/>
+    <ownedAttribute xmi:id="_nq3YcCyDEeaGyMRVy7_H1A" name="羽毛"/>
+    <ownedAttribute xmi:id="_27g4ACyDEeaGyMRVy7_H1A" name="有角质没有牙齿"/>
+    <ownedOperation xmi:id="_6n7fYCyDEeaGyMRVy7_H1A" name="下蛋"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_q0owUCyEEeaGyMRVy7_H1A" name="翅膀"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wTKOiiyEEeaGyMRVy7_H1A" name="A_&lt;翅膀>_&lt;鸟>" memberEnd="_wTKOiyyEEeaGyMRVy7_H1A _wTKOjiyEEeaGyMRVy7_H1A">
+    <ownedEnd xmi:id="_wTKOiyyEEeaGyMRVy7_H1A" name="翅膀" type="_q0owUCyEEeaGyMRVy7_H1A" association="_wTKOiiyEEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wTKOjCyEEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wTKOjSyEEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_wTKOjiyEEeaGyMRVy7_H1A" name="鸟" type="_h1vYICyDEeaGyMRVy7_H1A" association="_wTKOiiyEEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wTKOjyyEEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wTKOkCyEEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_93QssCyEEeaGyMRVy7_H1A" name="水"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__RcLsCyEEeaGyMRVy7_H1A" name="氧气"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Ib_2xCyFEeaGyMRVy7_H1A" name="Dependency1" supplier="_93QssCyEEeaGyMRVy7_H1A" client="_YMJvECyAEeaGyMRVy7_H1A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_LtyXoCyFEeaGyMRVy7_H1A" name="Dependency2" supplier="__RcLsCyEEeaGyMRVy7_H1A" client="_YMJvECyAEeaGyMRVy7_H1A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TIufMCyFEeaGyMRVy7_H1A" name="大雁" clientDependency="_CHPz0CyIEeaGyMRVy7_H1A">
+    <generalization xmi:id="_ga78ICyFEeaGyMRVy7_H1A" general="_h1vYICyDEeaGyMRVy7_H1A"/>
+    <interfaceRealization xmi:id="_CHPz0CyIEeaGyMRVy7_H1A" name="InterfaceRealization1" supplier="_6Lh6cCyHEeaGyMRVy7_H1A" client="_TIufMCyFEeaGyMRVy7_H1A" contract="_6Lh6cCyHEeaGyMRVy7_H1A"/>
+    <ownedOperation xmi:id="_AZ0eICyHEeaGyMRVy7_H1A" name="下蛋"/>
+    <ownedOperation xmi:id="_Bw4XsCyHEeaGyMRVy7_H1A" name="飞"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_V4IEsCyFEeaGyMRVy7_H1A" name="鸭">
+    <generalization xmi:id="_do8VoyyFEeaGyMRVy7_H1A" general="_h1vYICyDEeaGyMRVy7_H1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XdNMICyFEeaGyMRVy7_H1A" name="企鹅">
+    <generalization xmi:id="_fSY_syyFEeaGyMRVy7_H1A" general="_h1vYICyDEeaGyMRVy7_H1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mxRzKiyFEeaGyMRVy7_H1A" name="A_&lt;翅膀>_&lt;animal>" memberEnd="_mxRzKyyFEeaGyMRVy7_H1A _mxRzLiyFEeaGyMRVy7_H1A">
+    <ownedEnd xmi:id="_mxRzKyyFEeaGyMRVy7_H1A" name="翅膀" type="_q0owUCyEEeaGyMRVy7_H1A" aggregation="composite" association="_mxRzKiyFEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mxRzLCyFEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mxRzLSyFEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mxRzLiyFEeaGyMRVy7_H1A" name="animal" type="_YMJvECyAEeaGyMRVy7_H1A" association="_mxRzKiyFEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mxRzLyyFEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mxRzMCyFEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G8tjYCyHEeaGyMRVy7_H1A" name="雁群">
+    <ownedOperation xmi:id="_NffT4CyHEeaGyMRVy7_H1A" name="V形飞行"/>
+    <ownedOperation xmi:id="_PFclEiyHEeaGyMRVy7_H1A" name="一字飞行"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uN8uKiyHEeaGyMRVy7_H1A" name="A_&lt;大雁>_&lt;雁群>" memberEnd="_uN8uKyyHEeaGyMRVy7_H1A _uN8uLiyHEeaGyMRVy7_H1A" navigableOwnedEnd="_uN8uKyyHEeaGyMRVy7_H1A">
+    <ownedEnd xmi:id="_uN8uKyyHEeaGyMRVy7_H1A" name="大雁" type="_TIufMCyFEeaGyMRVy7_H1A" aggregation="shared" association="_uN8uKiyHEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uN8uLCyHEeaGyMRVy7_H1A" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uN8uLSyHEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_uN8uLiyHEeaGyMRVy7_H1A" name="雁群" type="_G8tjYCyHEeaGyMRVy7_H1A" association="_uN8uKiyHEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uN8uLyyHEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uN8uMCyHEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_6Lh6cCyHEeaGyMRVy7_H1A" name="飞翔">
+    <ownedOperation xmi:id="_9mJAICyHEeaGyMRVy7_H1A" name="飞"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JlhjQCyIEeaGyMRVy7_H1A" name="气候"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIIQMyyIEeaGyMRVy7_H1A" name="A_&lt;企鹅>_&lt;气候>" memberEnd="_PIIQNCyIEeaGyMRVy7_H1A _PIIQNyyIEeaGyMRVy7_H1A">
+    <ownedEnd xmi:id="_PIIQNCyIEeaGyMRVy7_H1A" name="企鹅" type="_XdNMICyFEeaGyMRVy7_H1A" association="_PIIQMyyIEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIIQNSyIEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIIQNiyIEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_PIIQNyyIEeaGyMRVy7_H1A" name="气候" type="_JlhjQCyIEeaGyMRVy7_H1A" association="_PIIQMyyIEeaGyMRVy7_H1A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIIQOCyIEeaGyMRVy7_H1A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIIQOSyIEeaGyMRVy7_H1A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

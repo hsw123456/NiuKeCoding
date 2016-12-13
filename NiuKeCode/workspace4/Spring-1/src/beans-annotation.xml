@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- 指定Spring Ioc 容器的扫描的包 -->
+	<!-- 可以通过resource-pattern 指定扫描的资源 -->
+	<!--  
+	<context:component-scan base-package="com.atguigu.spring.beans.annotation" 
+	resource-pattern="repository/*.class">
+	
+	</context:component-scan>
+	-->
+	<!-- context:exclude-filter:指定排除expression 指定的组件
+	<context:component-scan base-package="com.atguigu.spring.beans.annotation">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+	</context:component-scan> -->
+	
+	<!--context:include-filter:指定包含expression 指定的组件  
+	<context:component-scan base-package="com.atguigu.spring.beans.annotation" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+	</context:component-scan>-->
+	
+	<context:component-scan base-package="com.atguigu.spring.beans.annotation"></context:component-scan>
+	
+</beans>

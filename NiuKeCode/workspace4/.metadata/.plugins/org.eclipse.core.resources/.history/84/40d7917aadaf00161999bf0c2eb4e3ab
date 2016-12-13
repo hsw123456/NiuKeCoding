@@ -1,0 +1,53 @@
+package com.niuke.test2;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class TestGreedy {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int maxTime = 0;
+		int type = 0;
+		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+		if (scanner.hasNextLine()) {
+			String line = scanner.nextLine();
+			String[] str = line.split(" ");
+			try {
+				maxTime = Integer.parseInt(str[0]);
+				type = Integer.parseInt(str[1]);
+			} catch (Exception e) {
+				throw new RuntimeException("error");
+			}
+		}
+		
+		for (int i = 0; i < type; i++) {
+			if(scanner.hasNextLine()){
+				map.put(scanner.nextInt(), scanner.nextInt());
+			}
+		}
+
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + "-->" + entry.getValue());
+		}
+	}
+
+	public static int maxValue(Map<Integer, Integer> m,int maxTime){
+		int timesum = 0;
+		int valuesum = 0;
+		int thisTime;
+		int thisvalue;
+		for(Map.Entry<Integer, Integer> entry: m.entrySet()){
+			thisTime = entry.getKey();
+			thisvalue = entry.getValue();
+			if(timesum < maxTime){
+				timesum +=thisTime;
+				valuesum += thisvalue;
+				//syso
+			}
+		}
+		
+		return valuesum;
+	}
+}

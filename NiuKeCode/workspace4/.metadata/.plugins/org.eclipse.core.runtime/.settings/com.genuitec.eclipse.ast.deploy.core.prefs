@@ -1,0 +1,14 @@
+#Fri Nov 25 09:41:52 CST 2016
+tomcat6Server.ItcastOA.isDeployed=true
+tomcat6Server.ItcastOA.deployIsOverProject=false
+tomcat6Server.ItcastOA.noFileCopy=false
+tomcat6Server.ItcastOA.deploymentPath=E\:\\JavaOpenSource\\Tomcat\\apache-tomcat-6.0.16\\webapps\\ItcastOA
+tomcat6Server.ItcastOA.type=WebDeployment
+tomcat6Server.ItcastOA.altContextRoot=/ItcastOA
+tomcat6Server.ItcastOA.shouldBackup=true
+tomcat6Server.ItcastOA.isExploded=true
+tomcat6Server.ItcastOA.shouldOverwrite=false
+tomcat6Server.ItcastOA.isUptoDate=true
+eclipse.preferences.version=1
+tomcat6Server.ItcastOA.IEARProjectName=
+tomcat6Server.ItcastOA.contextRoot=/ItcastOA

@@ -1,0 +1,30 @@
+package com.niuke.test;
+
+import com.sun.accessibility.internal.resources.accessibility;
+
+public class MaxSequence{
+	
+	public static void main(String[] args) {
+		int count = 0;
+		long[] nums = new long[count];
+		
+		long sum = maxsumSequence(count, nums);
+		System.out.println(sum);
+	}
+	
+	public static long maxsumSequence(int count,long[] nums){
+		long max = nums[0];
+		long sum = 0;
+		for(int i =0; i<count;i++){
+			for(int j= i; j<count; j++){
+				sum += nums[j];
+				if(sum > max){
+					max = sum;
+				}
+			}
+		}
+		return max;
+	}
+}
+
+

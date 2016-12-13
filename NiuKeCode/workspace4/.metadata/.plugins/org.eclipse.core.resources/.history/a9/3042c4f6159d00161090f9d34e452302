@@ -1,0 +1,20 @@
+package cn.itcast.oa.util;
+
+/**
+ * 用于辅助拼接HQL语句
+ * @author Administrator
+ *
+ */
+public class QueryHelper {
+	
+	private String fromClause;//必须的
+	
+	private String whereClause;//可选
+	
+	private String orderByClause;//可选
+	
+	public QueryHelper(Class clazz, String alien){
+		fromClause = "FROM "
+	}
+
+}

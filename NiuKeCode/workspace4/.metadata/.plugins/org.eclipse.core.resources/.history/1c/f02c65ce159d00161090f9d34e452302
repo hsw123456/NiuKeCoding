@@ -1,0 +1,15 @@
+package cn.itcast.oa.util;
+
+public class QueryHelper {
+	
+	private String fromClause;//必须的
+	
+	private String whereClause;//可选
+	
+	private String orderByClause;//可选
+	
+	public QueryHelper(Class clazz, String alien){
+		fromClause = "FROM "
+	}
+
+}

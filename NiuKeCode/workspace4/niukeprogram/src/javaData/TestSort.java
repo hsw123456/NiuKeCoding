@@ -1,0 +1,24 @@
+package javaData;
+
+public class TestSort {
+
+	public static void main(String[] args) {
+
+		long[] arr = new long[] { 34, 23, 2, 1, -4 };
+		System.out.print("[");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.print("]");
+
+		//new BubbleSort().bubbleSort(arr);
+		//new SelectionSort().selectionSort(arr);
+		new InsertionSort().insertSort(arr);
+		System.out.println();
+		System.out.print("[");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.print("]");
+	}
+}

@@ -1,0 +1,26 @@
+package com.niuke.test;
+
+import java.util.Scanner;
+
+public class JiaMi {
+	
+
+    public static void main(String[] args){
+        
+        Scanner input = new Scanner(System.in);
+         int count = 0;
+        String[] str ;
+        while(input.hasNext()){
+            count = Integer.parseInt(input.nextLine());
+            str = new String[count];
+            for(int i = 0; i< count; i++){
+                str[i] = input.nextLine();
+            }
+            
+        }
+        
+        
+    }
+}
+
+

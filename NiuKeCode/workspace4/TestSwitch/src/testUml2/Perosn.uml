@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Perosn">
+  <packagedElement xmi:type="uml:Class" xmi:id="_-2YPQCyjEeaAX7zfhP0b4g" name="Person">
+    <ownedAttribute xmi:id="_CLfw8CykEeaAX7zfhP0b4g" name="id" visibility="private"/>
+    <ownedAttribute xmi:id="_ENQNUCykEeaAX7zfhP0b4g" name="name" visibility="private"/>
+    <ownedOperation xmi:id="_GmCpoCykEeaAX7zfhP0b4g" name="speaking"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,73 @@
+package cn.itcast.oa.util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 用于辅助拼接HQL语句
+ * 
+ * @author Administrator
+ * 
+ */
+public class QueryHelper {
+
+	private String fromClause;// 必须的
+
+	private String whereClause = "";// 可选
+
+	private String orderByClause = "";// 可选
+
+	private List<Object> parameters = new ArrayList<Object>();
+
+	/**
+	 * 初始化的时候生成FROM 子句
+	 * 
+	 * @param clazz
+	 * @param alien
+	 */
+	public QueryHelper(Class clazz, String alias) {
+		fromClause = "FROM " + clazz.getSimpleName() + " AS " + alias;
+	}
+
+	/**
+	 * 拼接WHERE 子句
+	 * 
+	 * @param condition
+	 * @param params
+	 */
+	public void addCondition(String condition, Object... params) {
+		// 拼接where子句
+		if (whereClause.length() == 0) {
+
+			whereClause = " WHERE " + condition;
+		} else {
+
+			whereClause = " AND " + condition;
+		}
+
+		// 参数
+		if (params != null) {
+			for (Object o : params) {
+				parameters.add(o);
+			}
+		}
+	}
+
+	/**
+	 * 用于拼接ORDER By 子句
+	 * 
+	 * @param propertyName
+	 * @param asc
+	 */
+	public void addOrderProperty(String propertyName, boolean asc) {
+		if (orderByClause.length() == 0) {
+
+			orderByClause = " ORDER BY " + propertyName + (asc ?" ASC ":" DESC ");
+		} else {
+
+			orderByClause = "  ," + propertyName + asc;
+		}
+
+	}
+
+}

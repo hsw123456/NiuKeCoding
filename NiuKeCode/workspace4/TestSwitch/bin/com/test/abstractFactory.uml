@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="abstractFactory">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Y_WHgC05EeaOKLNGLdC9BQ" name="AbstractFactory" isAbstract="true">
+    <ownedOperation xmi:id="_sL3mwC05EeaOKLNGLdC9BQ" name="createVehicle" isAbstract="true">
+      <ownedParameter xmi:id="_LcXOMC06EeaOKLNGLdC9BQ" name="return" type="_fJFF4C05EeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_sWtk0C05EeaOKLNGLdC9BQ" name="createWeapon" isAbstract="true">
+      <ownedParameter xmi:id="_PTJ5kC06EeaOKLNGLdC9BQ" name="return" type="_gfsTgC05EeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_szKQQC05EeaOKLNGLdC9BQ" name="createFood" isAbstract="true">
+      <ownedParameter xmi:id="_Qbn9gC06EeaOKLNGLdC9BQ" name="return" type="_oW45QC05EeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fJFF4C05EeaOKLNGLdC9BQ" name="Vehicle" isAbstract="true">
+    <ownedOperation xmi:id="_dpY_UC06EeaOKLNGLdC9BQ" name="run" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gfsTgC05EeaOKLNGLdC9BQ" name="weapon" isAbstract="true">
+    <ownedOperation xmi:id="_meh0AC06EeaOKLNGLdC9BQ" name="shoot" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oW45QC05EeaOKLNGLdC9BQ" name="Food" isAbstract="true">
+    <ownedOperation xmi:id="_sOYSwC06EeaOKLNGLdC9BQ" name="printName" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8ci_8C05EeaOKLNGLdC9BQ" name="DefaultFactory">
+    <generalization xmi:id="_Btc44i06EeaOKLNGLdC9BQ" general="_Y_WHgC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-xjIcC05EeaOKLNGLdC9BQ" name="MegicFactory">
+    <generalization xmi:id="_CiPL0y06EeaOKLNGLdC9BQ" general="_Y_WHgC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yXPHYC06EeaOKLNGLdC9BQ" name="Car">
+    <generalization xmi:id="_6wR18y06EeaOKLNGLdC9BQ" general="_fJFF4C05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0S_pcC06EeaOKLNGLdC9BQ" name="Broom">
+    <generalization xmi:id="_7VuFUy06EeaOKLNGLdC9BQ" general="_fJFF4C05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-bRhAC06EeaOKLNGLdC9BQ" name="AK47">
+    <generalization xmi:id="_HVTcwy07EeaOKLNGLdC9BQ" general="_gfsTgC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AY_K4C07EeaOKLNGLdC9BQ" name="MagicStick">
+    <generalization xmi:id="_H1f_wy07EeaOKLNGLdC9BQ" general="_gfsTgC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J4i1kC07EeaOKLNGLdC9BQ" name="Apple">
+    <generalization xmi:id="_NvPaUy07EeaOKLNGLdC9BQ" general="_oW45QC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_L-3o4C07EeaOKLNGLdC9BQ" name="MushRoom">
+    <generalization xmi:id="_OTO4MC07EeaOKLNGLdC9BQ" general="_oW45QC05EeaOKLNGLdC9BQ"/>
+  </packagedElement>
+</uml:Model>

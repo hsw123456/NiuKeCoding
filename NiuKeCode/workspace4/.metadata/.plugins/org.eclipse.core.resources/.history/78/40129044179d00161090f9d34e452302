@@ -1,0 +1,34 @@
+package cn.itcast.oa.util;
+
+/**
+ * 用于辅助拼接HQL语句
+ * @author Administrator
+ *
+ */
+public class QueryHelper {
+	
+	private String fromClause;//必须的
+	
+	private String whereClause;//可选
+	
+	private String orderByClause;//可选
+	
+	/**
+	 * 初始化的时候生成FROM 子句
+	 * @param clazz
+	 * @param alien
+	 */
+	public QueryHelper(Class clazz, String alias){
+		fromClause = "FROM "+ clazz.getSimpleName()+" AS "+ alias;
+	}
+	
+	/**
+	 * 拼接WHERE 子句
+	 * @param condition
+	 * @param params
+	 */
+	public void addCondition(String condition, Object ...params){
+		
+	}
+
+}

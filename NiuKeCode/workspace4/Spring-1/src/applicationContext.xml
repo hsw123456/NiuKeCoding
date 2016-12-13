@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.0.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- 通过反射的方式创建Bean，故需要无参的构造器 -->
+	<bean id="helloworld" class="com.atguigu.spring.beans.HelloWorld">
+		<property name="name2" value="Spring"></property>
+
+	</bean>
+
+	<!-- 通过构造方法来配置Bean的属性 -->
+	<bean id="car" class="com.atguigu.spring.beans.Car">
+		<constructor-arg value="Audi" index="0"></constructor-arg>
+		<constructor-arg value="Shanghai" index="1"></constructor-arg>
+		<constructor-arg value="300000" type="double"></constructor-arg>
+	</bean>
+
+	<!-- 使用构造器注入属性值可以指定参数位置和参数的类型以区分重载的构造器 -->
+	<!-- 如果字面上包含特殊字符可以使用 ![CDATA[]包裹起来 -->
+	<!-- 注入的value属性值可以使用<value> 子节点 来赋值 -->
+	<bean id="car2" class="com.atguigu.spring.beans.Car">
+		<constructor-arg value="BMW" type="java.lang.String"></constructor-arg>
+		<constructor-arg type="java.lang.String">
+			<value><![CDATA[<ShangHai^>]]></value>
+		</constructor-arg>
+		<constructor-arg value="240" type="int"></constructor-arg>
+	</bean>
+	<!-- 对于应用类型的属性 可以使用 ref 属性或元素来赋值 -->
+	<bean id="person" class="com.atguigu.spring.beans.Person">
+		<property name="name" value="Tom"></property>
+		<property name="age" value="20"></property>
+		<!-- <property name="car" ref="car2"></property> -->
+		<!-- 使用内部Bean 为引用类型赋值,不能被外部使用 -->
+		<property name="car">
+			<bean class="com.atguigu.spring.beans.Car">
+				<constructor-arg value="Ford"></constructor-arg>
+				<constructor-arg value="ChangAn"></constructor-arg>
+				<constructor-arg value="200000" type="double"></constructor-arg>
+
+			</bean>
+
+		</property>
+
+	</bean>
+
+	<bean id="person2" class="com.atguigu.spring.collection.Person">
+		<property name="name" value="Mike"></property>
+		<property name="age" value="27"></property>
+		<property name="cars">
+			<list>
+				<ref bean="car" />
+				<ref bean="car2" />
+			</list>
+
+		</property>
+
+	</bean>
+
+	<!-- 配置单独的集合Bean 以供多个bean 使用 -->
+	<util:list id="carList">
+		<ref bean="car" />
+		<ref bean="car2" />
+	</util:list>
+
+	<bean id="person4" class="com.atguigu.spring.collection.Person">
+		<property name="name" value="HSw"></property>
+		<property name="age" value="23"></property>
+		<property name="cars" ref="carList"></property>
+	</bean>
+
+	<bean id="newPerson" class="com.atguigu.spring.collection.NewPerson">
+		<property name="name" value="Rose"></property>
+		<property name="age" value="25"></property>
+		<property name="cars">
+			<map>
+				<entry key="AA" value-ref="car"></entry>
+				<entry key="BB" value-ref="car2"></entry>
+			</map>
+
+		</property>
+
+	</bean>
+
+	<!-- 使用 props 为property 赋值 -->
+	<bean id="dataSource" class="com.atguigu.spring.collection.DataSource">
+		<property name="properties">
+			<props>
+				<prop key="user">root</prop>
+				<prop key="password">1234</prop>
+				<prop key="jdbcUrl">jdbc:mysql:///test</prop>
+				<prop key="driverClass">com.mysql.jdbc.Driver</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- 利用P 命名空间为属性赋值较传统方式简洁 -->
+	<bean id="person5" class="com.atguigu.spring.collection.Person" p:name="Queen"
+	 p:age="24" p:cars-ref="carList"></bean>
+
+
+
+</beans>

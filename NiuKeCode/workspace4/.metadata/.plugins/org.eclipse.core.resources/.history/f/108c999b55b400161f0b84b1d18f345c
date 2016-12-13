@@ -1,0 +1,22 @@
+package com.hsw.test2;
+
+public class TestInnerClass {
+
+}
+
+class Outer{
+	
+	private Integer id;
+	private String name;
+	
+	public void info(){
+		System.out.println("outer's info method....");
+	}
+	
+	public class Inner{
+		
+		public void info(){
+			System.out.println("inner's info method>>>>>>");
+		}
+	}
+}

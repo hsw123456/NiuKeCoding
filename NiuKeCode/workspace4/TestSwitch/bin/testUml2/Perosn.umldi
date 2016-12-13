@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_99zogCyjEeaAX7zfhP0b4g" activeDiagram="_99zogSyjEeaAX7zfhP0b4g">
+  <model href="Perosn.uml#_qb8akM37EdqwVrslYOdUDA"/>
+  <diagrams xmi:id="_99zogSyjEeaAX7zfhP0b4g" position="0,0" size="100,100" name="Perosn" viewport="0,0">
+    <property xmi:id="_99-AkCyjEeaAX7zfhP0b4g" key="pageFormatName" value="A4"/>
+    <property xmi:id="_99-AkSyjEeaAX7zfhP0b4g" key="diagramWidth" value="840"/>
+    <property xmi:id="_99-AkiyjEeaAX7zfhP0b4g" key="diagramHeight" value="1188"/>
+    <property xmi:id="_99-AkyyjEeaAX7zfhP0b4g" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_99-AlCyjEeaAX7zfhP0b4g" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_99-AlSyjEeaAX7zfhP0b4g" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_99-AliyjEeaAX7zfhP0b4g" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_99-AlyyjEeaAX7zfhP0b4g" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_99-AmCyjEeaAX7zfhP0b4g" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_99zogiyjEeaAX7zfhP0b4g" presentation="org.topcased.modeler.uml.classdiagram">
+      <element href="Perosn.uml#_qb8akM37EdqwVrslYOdUDA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_-2VzACyjEeaAX7zfhP0b4g" position="206,175" size="161,-1">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_-2VzASyjEeaAX7zfhP0b4g" presentation="default">
+        <element href="Perosn.uml#_-2YPQCyjEeaAX7zfhP0b4g"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_-2VzAiyjEeaAX7zfhP0b4g">
+        <property xmi:id="_-2VzAyyjEeaAX7zfhP0b4g" key="eStructuralFeatureID" value="37"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_-2VzBCyjEeaAX7zfhP0b4g" presentation="default">
+          <element href="Perosn.uml#_-2YPQCyjEeaAX7zfhP0b4g"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_CLRHcCykEeaAX7zfhP0b4g" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_CLRHcSykEeaAX7zfhP0b4g" presentation="default">
+            <element href="Perosn.uml#_CLfw8CykEeaAX7zfhP0b4g"/>
+          </semanticModel>
+        </contained>
+        <contained xsi:type="di:GraphNode" xmi:id="_ENOYICykEeaAX7zfhP0b4g" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_ENOYISykEeaAX7zfhP0b4g" presentation="default">
+            <element href="Perosn.uml#_ENQNUCykEeaAX7zfhP0b4g"/>
+          </semanticModel>
+        </contained>
+      </contained>
+      <contained xsi:type="di:GraphNode" xmi:id="_-2VzBSyjEeaAX7zfhP0b4g">
+        <property xmi:id="_-2VzBiyjEeaAX7zfhP0b4g" key="eStructuralFeatureID" value="47"/>
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_-2VzByyjEeaAX7zfhP0b4g" presentation="default">
+          <element href="Perosn.uml#_-2YPQCyjEeaAX7zfhP0b4g"/>
+        </semanticModel>
+        <contained xsi:type="di:GraphNode" xmi:id="_GmA0cCykEeaAX7zfhP0b4g" position="0,0" size="-1,-1">
+          <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_GmA0cSykEeaAX7zfhP0b4g" presentation="default">
+            <element href="Perosn.uml#_GmCpoCykEeaAX7zfhP0b4g"/>
+          </semanticModel>
+        </contained>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

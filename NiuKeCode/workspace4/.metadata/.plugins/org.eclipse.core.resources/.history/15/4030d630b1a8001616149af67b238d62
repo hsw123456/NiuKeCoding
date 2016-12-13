@@ -1,0 +1,19 @@
+package com.niuke.test;
+
+public class MaxSequence{
+	
+	public static void main(String[] args) {
+		int count = 0;
+		long[] nums = new long[count];
+		
+		long sum = maxsumSequence(count, nums);
+		System.out.println(sum);
+	}
+	
+	public static long maxsumSequence(int count,long[] nums){
+		
+		return 0;
+	}
+}
+
+

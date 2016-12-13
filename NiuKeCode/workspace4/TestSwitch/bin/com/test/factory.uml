@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="factory">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_A0DEkCyeEeaAX7zfhP0b4g" name="Moveabel">
+    <ownedOperation xmi:id="_FVcMICyeEeaAX7zfhP0b4g" name="run"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_I5vZUCyeEeaAX7zfhP0b4g" name="Car" clientDependency="_OLAeoyyeEeaAX7zfhP0b4g">
+    <interfaceRealization xmi:id="_OLAeoyyeEeaAX7zfhP0b4g" name="InterfaceRealization1" supplier="_A0DEkCyeEeaAX7zfhP0b4g" client="_I5vZUCyeEeaAX7zfhP0b4g" contract="_A0DEkCyeEeaAX7zfhP0b4g"/>
+    <ownedOperation xmi:id="_Z7fDECyeEeaAX7zfhP0b4g" name="run"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KRmkICyeEeaAX7zfhP0b4g" name="Plane" clientDependency="_RlF_4yyeEeaAX7zfhP0b4g">
+    <interfaceRealization xmi:id="_RlF_4yyeEeaAX7zfhP0b4g" name="InterfaceRealization1" supplier="_A0DEkCyeEeaAX7zfhP0b4g" client="_KRmkICyeEeaAX7zfhP0b4g" contract="_A0DEkCyeEeaAX7zfhP0b4g"/>
+    <ownedOperation xmi:id="_beMzACyeEeaAX7zfhP0b4g" name="run" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tXGHMCyeEeaAX7zfhP0b4g" name="VehicleFactory" isAbstract="true">
+    <ownedOperation xmi:id="_0WKyICyeEeaAX7zfhP0b4g" name="create" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7TDEsCyeEeaAX7zfhP0b4g" name="CarFactory">
+    <generalization xmi:id="_ESSQkCyfEeaAX7zfhP0b4g" general="_tXGHMCyeEeaAX7zfhP0b4g"/>
+    <ownedOperation xmi:id="_JeJ4gCyfEeaAX7zfhP0b4g" name="create">
+      <ownedParameter xmi:id="_SSFzUCyfEeaAX7zfhP0b4g" name="return" type="_I5vZUCyeEeaAX7zfhP0b4g" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9gyuoCyeEeaAX7zfhP0b4g" name="PlaneFactory">
+    <generalization xmi:id="_GFQDAyyfEeaAX7zfhP0b4g" general="_tXGHMCyeEeaAX7zfhP0b4g"/>
+    <ownedOperation xmi:id="_WYRlkCyfEeaAX7zfhP0b4g" name="create">
+      <ownedParameter xmi:id="_XpadUCyfEeaAX7zfhP0b4g" name="return" type="_KRmkICyeEeaAX7zfhP0b4g" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_xe4UkCyhEeaAX7zfhP0b4g" name="InstanceSpecification1"/>
+</uml:Model>

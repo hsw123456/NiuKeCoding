@@ -1,0 +1,42 @@
+package com.niuke.test;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class ConvertSequence {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		BigInteger num = new BigInteger(input.next());
+		
+		System.out.println(convertSequence(num));
+	}
+
+	public static BigInteger convertSequence(BigInteger num) {
+		if (num.compareTo(new BigInteger(0+""))== 0)
+			return new BigInteger(0+"");
+		if (num.compareTo(new BigInteger(1+""))==0)
+			return new BigInteger(1+"");
+
+		ArrayList<BigInteger> list = new ArrayList<BigInteger>();
+		BigInteger a = new BigInteger(0+"");
+		while (num.compareTo(new BigInteger(0+""))==1) {
+			a = num.mod(new BigInteger(2+""));
+			list.add(a);
+			num = num.divide(new BigInteger(2+""));
+		}
+		
+		Collections.reverse(list);
+		
+		BigInteger sum = new BigInteger(0+"");
+		for(int i= 0; i<list.size(); i++){
+			sum = sum.add(list.get(i).multiply(new BigInteger(Math.pow(2, i)+"")));
+		}
+		
+		return sum;
+
+	}
+
+}

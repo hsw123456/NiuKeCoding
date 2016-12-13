@@ -1,0 +1,13 @@
+package com.niuke.test3;
+
+public class MergeStoredList {
+	
+	
+	
+	
+	public static ListNode merge(ListNode list1, ListNode list2){
+		
+		
+		return null;
+	}
+}

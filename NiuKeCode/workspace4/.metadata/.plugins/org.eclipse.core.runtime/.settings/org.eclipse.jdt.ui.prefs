@@ -1,0 +1,41 @@
+#Wed Dec 07 22:24:30 CST 2016
+content_assist_proposals_foreground=0,0,0
+hoverModifiers=org.eclipse.jdt.ui.BestMatchHover;\!0;org.eclipse.jdt.internal.debug.ui.JavaDebugHover;\!0;org.eclipse.jdt.ui.ProblemHover;\!0;org.eclipse.jdt.ui.NLSStringHover;Ctrl+Alt;org.eclipse.jdt.ui.JavadocHover;\!0;org.eclipse.jdt.ui.JavaSourceHover;Shift;org.eclipse.jdt.ui.AnnotationHover;\!0;
+java_multi_line_comment_bold=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+content_assist_proposals_background=199,237,204
+org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter=true
+useQuickDiffPrefPage=true
+lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter,
+MemberFilterActionGroup.org.eclipse.jdt.ui.JavaOutlinePage.8=true
+org.eclipse.jdt.ui.overrideannotation=true
+content_assist_number_of_computers=17
+CustomFiltersActionGroup.org.eclipse.jdt.ui.PackageExplorer.TAG_DUMMY_TO_TEST_EXISTENCE=storedViewPreferences
+content_assist_autoactivation_triggers_java=.qwertyuiopasdgfhjklzxcvbnm
+useAnnotationsPrefPage=true
+org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter=true
+org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
+org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter=true
+spelling_locale_initialized=true
+org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
+fontPropagated=true
+sourceHoverBackgroundColor=255,255,225
+org.eclipse.jdt.ui.exception.name=e
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*=true
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jdt.ui.gettersetter.use.is=true
+org.eclipse.jface.textfont=1|Courier New|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+tabWidthPropagated=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.atguigu.spring.beans.HelloWorld"><rhs name\="com.atguigu.spring.beans.HelloWorld"/></lhs><lhs name\="org.springframework.beans.factory.ListableBeanFactory"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.beans.factory.HierarchicalBeanFactory"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.context.MessageSource"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.context.ApplicationEventPublisher"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.core.io.support.ResourcePatternResolver"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.beans.factory.BeanFactory"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.core.io.ResourceLoader"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="org.springframework.context.ApplicationContext"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.TreeMap"/><rhs name\="java.util.HashMap"/></lhs><lhs name\="com.atguigu.spring.beans.factory.Car"><rhs name\="com.atguigu.spring.beans.factory.Car"/></lhs><lhs name\="com.atguigu.spring.aop.helloworld.ArithmeticCalculater"><rhs name\="com.atguigu.spring.aop.helloworld.ArithmeticCalculaterImpl"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.HashSet"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.HashSet"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="Person"><rhs name\="Person"/></lhs><lhs name\="PersonService"><rhs name\="PersonService"/></lhs><lhs name\="org.springframework.core.env.EnvironmentCapable"><rhs name\="org.springframework.context.support.ClassPathXmlApplicationContext"/></lhs><lhs name\="cn.itcast.oa.base.BaseDao"><rhs name\="cn.itcast.oa.daoImpl.UserDaoImpl"/></lhs><lhs name\="cn.itcast.oa.dao.UserDao"><rhs name\="cn.itcast.oa.daoImpl.UserDaoImpl"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="cn.itcast.oa.domain.Department"><rhs name\="cn.itcast.oa.domain.Department"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Long"/><rhs name\="java.lang.Integer"/><rhs name\="java.math.BigInteger"/></lhs><lhs name\="cn.itcast.oa.domain.User"><rhs name\="cn.itcast.oa.domain.User"/></lhs><lhs name\="cn.itcast.oa.domain.Privilege"><rhs name\="cn.itcast.oa.domain.Privilege"/></lhs><lhs name\="cn.itcast.oa.domain.PageBean"><rhs name\="cn.itcast.oa.domain.PageBean"/></lhs><lhs name\="cn.itcast.oa.domain.Forum"><rhs name\="cn.itcast.oa.domain.Forum"/></lhs><lhs name\="cn.itcast.oa.util.QueryHelper"><rhs name\="cn.itcast.oa.util.QueryHelper"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.math.BigInteger"><rhs name\="java.math.BigInteger"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="com.niuke.test.Person"><rhs name\="com.niuke.test.Person"/></lhs><lhs name\="java.util.Comparator"><rhs name\="com.niuke.test.Dog"/><rhs name\="com.niuke.test.SortByWeightAsc"/></lhs><lhs name\="com.niuke.test.Dog"><rhs name\="com.niuke.test.Dog"/></lhs><lhs name\="com.niuke.test.Testscore$Student"><rhs name\="com.niuke.test.Testscore$Student"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.text.SimpleDateFormat"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="com.niuke.test.TestRecords$Records"><rhs name\="com.niuke.test.TestRecords$Records"/></lhs><lhs name\="java.io.File"><rhs name\="java.io.File"/></lhs><lhs name\="java.util.Enumeration"><rhs name\="java.util.StringTokenizer"/></lhs><lhs name\="java.util.StringTokenizer"><rhs name\="java.util.StringTokenizer"/></lhs><lhs name\="com.niuke.test3.ListNode"><rhs name\="com.niuke.test3.ListNode"/></lhs></history>
+hoverModifierMasks=org.eclipse.jdt.ui.BestMatchHover;0;org.eclipse.jdt.internal.debug.ui.JavaDebugHover;0;org.eclipse.jdt.ui.ProblemHover;0;org.eclipse.jdt.ui.NLSStringHover;327680;org.eclipse.jdt.ui.JavadocHover;0;org.eclipse.jdt.ui.JavaSourceHover;131072;org.eclipse.jdt.ui.AnnotationHover;0;
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
+proposalOrderMigrated=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="" enabled\="true" name\="tryf">try{&\#13;\r\n${line_selection}&\#13;\r\n}&\#13;\r\nfinally{&\#13;\r\n${cursor}&\#13;\r\n}</template></templates>
+java_multi_line_comment=0,128,192
+org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true

@@ -1,0 +1,26 @@
+package com.niuke.test;
+
+public class Rolation {
+	
+	public static boolean checkRolation(String A, int lena, String B, int lenb){
+		
+		if(lena != lenb)
+			return false;
+		
+		String C = A +B;
+		for(int start = 0;start<lena-4; start++){
+			if((C.substring(start, start+4)).equals(A)){
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		String a = "1234";
+		String b = "2341" ;
+		System.out.println(checkRolation(a, 4, b, 4));
+	}
+
+}

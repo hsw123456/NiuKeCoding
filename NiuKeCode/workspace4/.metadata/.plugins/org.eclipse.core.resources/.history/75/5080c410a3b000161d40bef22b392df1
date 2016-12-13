@@ -1,0 +1,97 @@
+package com.javaSe.test;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * Uses a linked list to implement the sieve of 一个不错的方法实现寻找所有的素数
+ * 
+ * @author Administrator
+ */
+public class TestLinkedList {
+
+	public static void main(String[] args) {
+
+		System.out.println("this program will tell you all primes");
+		System.out.println("please give a maximun");
+		System.out.println();
+
+		Scanner console = new Scanner(System.in);
+		System.out.println("Maximun number? ");
+		int max = console.nextInt();
+		long start  = System.currentTimeMillis();
+		//List<Integer> primes = findPrime1(max);
+		List<Integer> primes = findPrime2(max);
+		long end  = System.currentTimeMillis();
+		System.out.println("所有小于整数" + max + "的素数有：");
+		System.out.println(primes);
+		System.out.println("consumeTime:" + (end-start));//717ms,47ms
+	}
+	
+	/**
+	 * @version1
+	 * @param max
+	 * @return
+	 */
+	private static List<Integer> findPrime1(int max) {
+		List<Integer> primes = new LinkedList<Integer>();// 保存所有小于max的素数的集合
+		List<Integer> numbers = new LinkedList<Integer>();// 保存小于或等于max的所有整数
+		// add all number from 2 to max to a list
+		for (int i = 2; i <= max; i++) {
+			numbers.add(i);
+		}
+		while (!numbers.isEmpty()) {
+			int front = numbers.remove(0);
+			primes.add(front);
+			// remove all multiples of this prime number
+			Iterator<Integer> itr = numbers.iterator();
+			while (itr.hasNext()) {
+				int current = itr.next();
+				if (current % front == 0) {
+					itr.remove();
+				}
+			}
+		}
+
+		return primes;
+
+	}
+	
+	/**
+	 * version2:循环控制在sqrt(max)
+	 * @param max
+	 * @return
+	 */
+	private static List<Integer> findPrime2(int max) {
+		List<Integer> primes = new LinkedList<Integer>();// 保存所有小于max的素数的集合
+		List<Integer> numbers = new LinkedList<Integer>();// 保存小于或等于max的所有整数
+		// add all number from 2 to max to a list
+		numbers.add(2);
+		for (int i = 3; i <= max; i++) {
+			if(i %2 == 0)
+				continue;
+			numbers.add(i);
+		}
+		while (!numbers.isEmpty()) {
+			int front = numbers.remove(0);
+			primes.add(front);
+			if(front > Math.sqrt(max))
+				break;
+			// remove all multiples of this prime number
+			Iterator<Integer> itr = numbers.iterator();
+			while (itr.hasNext()) {
+				int current = itr.next();
+				if (current % front == 0) {
+					itr.remove();
+				}
+			}
+		}
+		
+		primes.addAll(numbers);
+		return primes;
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.niuke.test3;
+
+public class Partition {
+
+}
+
+class ListNode {
+	int val;
+	ListNode next = null;
+
+	ListNode(int val) {
+		this.val = val;
+	}
+}

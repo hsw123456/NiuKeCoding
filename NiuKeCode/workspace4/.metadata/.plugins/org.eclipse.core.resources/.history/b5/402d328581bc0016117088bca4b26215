@@ -1,0 +1,20 @@
+package com.niuke.test3;
+
+public class Partition {
+	
+	public ListNode partition(ListNode pHead, int x){
+		
+		
+		return null;
+	}
+
+}
+
+class ListNode {
+	int val;
+	ListNode next = null;
+
+	ListNode(int val) {
+		this.val = val;
+	}
+}

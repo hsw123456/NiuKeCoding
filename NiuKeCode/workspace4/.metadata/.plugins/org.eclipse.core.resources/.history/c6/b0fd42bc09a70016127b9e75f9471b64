@@ -1,0 +1,38 @@
+package com.niuke.test;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ConvertSequence {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int num = input.nextInt();
+		
+		System.out.println(convertSequence(num));
+	}
+
+	public static double convertSequence(int num) {
+		if (num == 0)
+			return 0;
+		if (num == 1)
+			return 2;
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		int a = 0;
+		while (num > 0) {
+			a = num % 2;
+			list.add(a);
+			num = num / 2;
+		}
+		
+		double sum = 0;
+		for(int i= 0; i<list.size(); i++){
+			sum += list.get(i)* Math.pow(2, i);
+		}
+		
+		return sum;
+
+	}
+
+}

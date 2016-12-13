@@ -1,0 +1,20 @@
+package com.niuke.test;
+
+import java.util.Scanner;
+
+public class TestRunNian {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int year, month,day;
+		while(input.hasNextInt()){
+			year = input.nextInt();
+			month = input.nextInt();
+			day = input.nextInt();
+			
+			int numbers = countDay(year,month,day);
+			System.out.println(numbers);
+		}
+	}
+
+}

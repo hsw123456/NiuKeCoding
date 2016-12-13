@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.springframework.ide.eclipse.beans.ui.inplace.BeansInplaceOutlineDialog">
+		<item value="360" key="size.width"/>
+		<item value="170" key="size.height"/>
+		<item value="460" key="location.x"/>
+		<item value="379" key="location.y"/>
+	</section>
+	<section name="org.springframework.ide.eclipse.beans.ui.dialogs.BeanListSelectionDialog">
+		<item value="598" key="height"/>
+		<item value="480" key="width"/>
+		<item value="52" key="y"/>
+		<item value="560" key="x"/>
+	</section>
+</section>

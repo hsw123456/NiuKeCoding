@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="newmodel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_rDE4AJRBEeWr48G7pnbHEA" name="Persion" isAbstract="true">
+    <ownedAttribute xmi:id="_EbTEgJRCEeWr48G7pnbHEA" name="Name"/>
+    <ownedAttribute xmi:id="_GrCSgpRCEeWr48G7pnbHEA" name="ID"/>
+    <ownedAttribute xmi:id="_MXSDoJRCEeWr48G7pnbHEA" name="Sex"/>
+    <ownedOperation xmi:id="_HpVt0JRCEeWr48G7pnbHEA" name="Sepaking">
+      <ownedParameter xmi:id="_U0dEQJRCEeWr48G7pnbHEA" name="return" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gy82kJRCEeWr48G7pnbHEA" name="Student">
+    <generalization xmi:id="_lN1tgJRCEeWr48G7pnbHEA" general="_rDE4AJRBEeWr48G7pnbHEA"/>
+    <ownedAttribute xmi:id="_nWkUkpRCEeWr48G7pnbHEA" name="School"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rrY_wJRCEeWr48G7pnbHEA" name="Programmer">
+    <generalization xmi:id="_yVijlJRCEeWr48G7pnbHEA" general="_rDE4AJRBEeWr48G7pnbHEA"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_3s9wwC1MEeaOKLNGLdC9BQ">
+  <name xsi:nil="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3s-X0C1MEeaOKLNGLdC9BQ" name="MagicStick">
+    <generalization xmi:id="_3tq7YC1MEeaOKLNGLdC9BQ" general="_3tKlEC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3tricC1MEeaOKLNGLdC9BQ" name="shoot" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tJ-AC1MEeaOKLNGLdC9BQ" name="DefaultFactory">
+    <generalization xmi:id="_3tricS1MEeaOKLNGLdC9BQ" general="_3tMaQS1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3trici1MEeaOKLNGLdC9BQ" name="createVehicle" visibility="public">
+      <ownedParameter xmi:id="_3tricy1MEeaOKLNGLdC9BQ" name="return" type="_3tOPcC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tsJgC1MEeaOKLNGLdC9BQ" name="createWeapon" visibility="public">
+      <ownedParameter xmi:id="_3tswkC1MEeaOKLNGLdC9BQ" name="return" type="_3tKlEC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tswkS1MEeaOKLNGLdC9BQ" name="createFood" visibility="public">
+      <ownedParameter xmi:id="_3tswki1MEeaOKLNGLdC9BQ" name="return" type="_3tMaQC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tKlEC1MEeaOKLNGLdC9BQ" name="weapon" isAbstract="true">
+    <ownedOperation xmi:id="_3tswky1MEeaOKLNGLdC9BQ" name="shoot" visibility="public" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tLMIC1MEeaOKLNGLdC9BQ" name="Broom">
+    <generalization xmi:id="_3ttXoC1MEeaOKLNGLdC9BQ" general="_3tOPcC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3ttXoS1MEeaOKLNGLdC9BQ" name="run" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tLzMC1MEeaOKLNGLdC9BQ" name="MushRoom">
+    <generalization xmi:id="_3ttXoi1MEeaOKLNGLdC9BQ" general="_3tMaQC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3ttXoy1MEeaOKLNGLdC9BQ" name="printName" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tMaQC1MEeaOKLNGLdC9BQ" name="Food" isAbstract="true">
+    <ownedOperation xmi:id="_3tt-sC1MEeaOKLNGLdC9BQ" name="printName" visibility="public" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tMaQS1MEeaOKLNGLdC9BQ" name="AbstractFactory" isAbstract="true">
+    <ownedOperation xmi:id="_3tt-sS1MEeaOKLNGLdC9BQ" name="createVehicle" visibility="public" isAbstract="true">
+      <ownedParameter xmi:id="_3tt-si1MEeaOKLNGLdC9BQ" name="return" type="_3tOPcC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tulwC1MEeaOKLNGLdC9BQ" name="createWeapon" visibility="public" isAbstract="true">
+      <ownedParameter xmi:id="_3tulwS1MEeaOKLNGLdC9BQ" name="return" type="_3tKlEC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tulwi1MEeaOKLNGLdC9BQ" name="createFood" visibility="public" isAbstract="true">
+      <ownedParameter xmi:id="_3tulwy1MEeaOKLNGLdC9BQ" name="return" type="_3tMaQC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tNBUC1MEeaOKLNGLdC9BQ" name="AK47">
+    <generalization xmi:id="_3tulxC1MEeaOKLNGLdC9BQ" general="_3tKlEC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3tulxS1MEeaOKLNGLdC9BQ" name="shoot" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tNBUS1MEeaOKLNGLdC9BQ" name="MegicFactory">
+    <generalization xmi:id="_3tvM0C1MEeaOKLNGLdC9BQ" general="_3tMaQS1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3tvM0S1MEeaOKLNGLdC9BQ" name="createVehicle" visibility="public">
+      <ownedParameter xmi:id="_3tvM0i1MEeaOKLNGLdC9BQ" name="return" type="_3tOPcC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tvM0y1MEeaOKLNGLdC9BQ" name="createWeapon" visibility="public">
+      <ownedParameter xmi:id="_3tvM1C1MEeaOKLNGLdC9BQ" name="return" type="_3tKlEC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_3tvz4C1MEeaOKLNGLdC9BQ" name="createFood" visibility="public">
+      <ownedParameter xmi:id="_3tvz4S1MEeaOKLNGLdC9BQ" name="return" type="_3tMaQC1MEeaOKLNGLdC9BQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tNoYC1MEeaOKLNGLdC9BQ" name="Car">
+    <generalization xmi:id="_3tvz4i1MEeaOKLNGLdC9BQ" general="_3tOPcC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3tvz4y1MEeaOKLNGLdC9BQ" name="run" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tOPcC1MEeaOKLNGLdC9BQ" name="Vehicle" isAbstract="true">
+    <ownedOperation xmi:id="_3twa8C1MEeaOKLNGLdC9BQ" name="run" visibility="public" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3tO2gC1MEeaOKLNGLdC9BQ" name="Apple">
+    <generalization xmi:id="_3twa8S1MEeaOKLNGLdC9BQ" general="_3tMaQC1MEeaOKLNGLdC9BQ"/>
+    <ownedOperation xmi:id="_3twa8i1MEeaOKLNGLdC9BQ" name="printName" visibility="public"/>
+  </packagedElement>
+</uml:Model>

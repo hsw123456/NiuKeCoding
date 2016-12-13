@@ -1,0 +1,42 @@
+package com.javaSe.test;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * Uses a linked list to implement the sieve of 
+ * 一个不错的方法实现寻找所有的素数
+ * @author Administrator
+ *@version1
+ */
+public class TestLinkedList {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("this program will tell you all primes");
+		System.out.println("please give a maximun");
+		System.out.println();
+		
+		Scanner console = new Scanner(System.in);
+		System.out.println("Maximun number? ");
+		int max = console.nextInt();
+		
+		List<Integer> primes = findPrime(max);
+		System.out.println("所有小于整数"+ max+"的素数有：");
+		System.out.println(primes);
+	}
+
+	private static List<Integer> findPrime(int max) {
+		List<Integer> primes = new LinkedList<Integer>();//保存所有小于max的素数的集合
+		List<Integer> numbers = new LinkedList<Integer>();//保存小于或等于max的所有整数
+		
+		//add all number from 2 to max to a list
+		for(int i =2; i<=max;i++){
+			numbers.add(i);
+		}
+		
+		
+	}
+
+}

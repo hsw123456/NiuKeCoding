@@ -1,0 +1,25 @@
+package cn.hsw.datasturcture;
+
+public class QuickSort {
+	
+	private static final int CUTOFF = 10;
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static <AnyType extends Comparable<? super AnyType>> 
+	void QuickSort(AnyType[] a, int low ,int high){
+		
+		if(low+CUTOFF >high)
+			insertionSort(a,low,high);
+		else {
+			//sort low,middle,high
+			int middle = (low +high)/2;
+		}
+		
+		
+		
+	}
+		
+}
